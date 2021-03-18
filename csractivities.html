@@ -1,0 +1,796 @@
+<html lang="en">
+
+<head>
+  <title>Welcome To Deep Foundation</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.9.0/baguetteBox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="icon" type="image/png" href="images/logoColour.png">
+  <style>
+    .img-jumbo {
+      background-image: linear-gradient(rgb(0 0 0 / 69%), rgb(0 0 0 / 80%)), url('./images/355A1298.jpg');
+      background-size: 100%, 100%;
+      height: 70vh;
+    }
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+      .img-jumbo {
+        background-image: linear-gradient(rgb(0 0 0 / 69%), rgb(0 0 0 / 80%)), url('./images/355A1298.jpg');
+        background-size: 100%, 100%;
+        height: auto !important;
+      }
+
+      .carousel-control-next-icon {
+        background-image: url('./images/next.svg') !important;
+      }
+
+      .carousel-control-prev-icon {
+        background-image: url('./images/next.svg') !important;
+        transform: rotate(180deg);
+      }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-block d-md-block d-none margin_header"
+    style="background: #fff !important;box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);">
+    <div class="container-fluid mx-lg-3">
+      <a class="navbar-brand font-weight-bold pl-lg-0 text-white" href="home.html"><img src="images/logoColour.png"
+          style="height: 60px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item active pl-lg-3 pr-lg-3">
+            <a class="nav-link text-dark" href="trendedprojects.html">Trended Projects</a>
+          </li>
+          <li class="nav-item pl-lg-3 pr-lg-3">
+            <a class="nav-link text-dark" href="home.html">Why we are</a>
+          </li>
+          <li class="nav-item pl-lg-3 pr-lg-3">
+            <a class="nav-link text-dark" href="home.html">Live Projects</a>
+          </li>
+          <!-- <li class="nav-item pl-lg-3 pr-lg-3">
+            <a class="nav-link text-dark" href="#news">Deep Insights</a>
+          </li> -->
+          <li class="nav-item dropdown dropdown-slide dropdown-hover">
+            <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="cursor: pointer;">
+              Deep Insights
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="certifications.html">Our Certifications</a>
+              <a class="dropdown-item" href="home.html">News Articles</a>
+              <a class="dropdown-item" href="home.html">Gallery</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item pl-lg-3 pr-lg-3">
+            <a class="nav-link text-dark" href="#gallery">Gallery</a>
+          </li> -->
+          <li class="nav-item pl-lg-3 pr-lg-3">
+            <a class="nav-link text-dark active" href="csractivities.html">CSR Partnerships</a>
+          </li>
+          <li class="nav-item pl-lg-3 pr-lg-3">
+            <a class="nav-link text-dark" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item pl-lg-3 pr-lg-1">
+            <a class="btn button one nav-link pl-5 pr-5 text-white" style="color: #fff !important;" data-toggle="modal"
+              data-target="#myModal">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <!-- Mobile menu start -->
+
+  <div class="d-block d-lg-none d-md-none mobile">
+    <nav class="navbar navbar-expand-md navbar-light bg-light flex-nowrap fixed-top"
+      style="background: #fff !important;">
+      <a class="navbar-brand text-white" href="#"><img src="images/logoColour.png" style="height:45px;"></a>
+      <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#exampleModal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <div class="container">
+      <div class="modal left fade" id="exampleModal" tabindex="" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content h-100" style="background:#0f0f0f !important;">
+            <div class="modal-body p-3">
+              <div class="text-right">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><img
+                    src="icons/close.png"></button>
+              </div>
+              <div class="nav flex-column">
+                <li><a href="home.html" class="nav-item nav-link text-white">Home</a></li>
+                <li><a href="home.html" class="nav-item nav-link text-white mt-3">About Us</a></li>
+                <li><a href="home.html" class="nav-item nav-link text-white mt-3">Live Projects</a></li>
+                <li><a href="home.html" class="nav-item nav-link text-white mt-3">News Articles</a></li>
+                <li><a class="nav-item nav-link text-white mt-3" href="home.html">Gallery</a></li>
+                <li><a href="home.html" class="nav-item nav-link text-white mt-3">contact</a></li>
+                <li><a href="csractivities.html" class="nav-item nav-link text-white mt-3">CSR Partnerships</a></li>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container -->
+    <!-- container -->
+  </div>
+  <!-- Mobile menu end -->
+  <section>
+    <div class="container-fluid pl-0 pr-0">
+      <div class="jumbotron col-12 img-jumbo mt-lg-5 mt-2" style="border-radius: 0px;">
+        <div class="row mt-lg-4 mt-2">
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <h5 class="text_color_red font_size_14px mt-3 mt-lg-3 ml12">Welcome to CSR Partnerships</h5>
+            <div>
+              <p class="text-left text-white font_size_12px col-lg-8 pl-lg-0 mt-lg-3 pl-0 mb-3 mt-4"
+                style="font-size: 16px;">We are always welcome to corporate social responsibility activities to bring
+                more
+                happiness to the need.
+              </p>
+            </div>
+            <div class="mt-4 mt-lg-4">
+              <button type="button" class="btn button one pl-4 pr-4 pl-lg-5 pr-lg-5" data-toggle="modal"
+                data-target="#myModal">Donate</button>
+              <a href="#csr" class="btn button one pl-4 pr-4 pl-lg-5 pr-lg-5 ml-3 text-white" id="csr">CSR Member
+                Forum</a>
+            </div>
+          </div>
+          <div class="col-lg-4 d-lg-block d-md-block d-none">
+            <div class="text-center text-white">
+              <div class="row align-items-center absolute">
+                <div class="col-lg-4">
+                  <h1 class="mb-0 counter">55</h1>
+                </div>
+                <div class="col-lg-8 text-left">
+                  <h4>Active Partnerships</h4>
+                </div>
+              </div>
+            </div>
+            <div class="text-center text-white">
+              <div class="row align-items-center absolute mt-lg-5">
+                <div class="col-lg-4">
+                  <h1 class="mb-0"><span>30</span><span class="">k+</span></h1>
+                </div>
+                <div class="col-lg-8 text-left">
+                  <h4>Funds Raised</h4>
+                </div>
+              </div>
+            </div>
+            <div class="text-center text-white">
+              <div class="row align-items-center absolute mt-lg-5">
+                <div class="col-lg-4">
+                  <h1 class="mb-0 counter">590</h1>
+                </div>
+                <div class="col-lg-8 text-left">
+                  <h4>People Benefitted</h4>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="csr">
+    <div class="container mt-lg-5">
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <h4 class="font-weight-bold">Our CSR Members</h4>
+        </div>
+      </div>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row mt-3 mx-0 mb-4 mb-lg-0 mb-md-0">
+              <div class="col-lg-6">
+                <div class="card border-0 height_220px"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/paccore.png" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-lg-block d-md-block d-none">
+                <div class="card border-0"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/Appolice-logo.png" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-lg-4 mx-0 mb-lg-4">
+              <div class="col-lg-6 d-lg-block d-md-block d-none">
+                <div class="card border-0"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/CARE Logo -Vizag copy.jpg" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-lg-block d-md-block d-none">
+                <div class="card border-0"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/BowlC_Logo-01.png" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row mt-3 mx-0 mb-4 mb-lg-0 mb-md-0">
+              <div class="col-lg-6">
+                <div class="card border-0 height_220px"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/OYO-03.png" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-lg-block d-md-block d-none">
+                <div class="card border-0"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/KVBM-LOGO.png" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-lg-4 mx-0 mb-lg-4">
+              <div class="col-lg-6 d-lg-block d-md-block d-none">
+                <div class="card border-0"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/STAR-MAA-MUSIC_logo-Blue.png" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-lg-block d-md-block d-none">
+                <div class="card border-0"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/RTI_LOGO-without-bg.png" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row mt-3 mb-4 mx-0">
+              <div class="col-lg-6">
+                <div class="card border-0 height_220px"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/kinley logo.jpg" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-lg-block d-md-block d-none">
+                <div class="card border-0"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/Mirchi-Logo-12.png" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-lg-4 mx-0 mb-lg-4">
+              <div class="col-lg-6 d-lg-block d-md-block d-none">
+                <div class="card border-0"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/hioOJs97_200x200.jpg" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-lg-block d-md-block d-none">
+                <div class="card border-0"
+                  style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img src="images/hp.png" class="img-fluid">
+                      </div>
+                      <div class="col-lg-9">
+                        <div>
+                          <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
+                        </div>
+                        <div class="mt-3">
+                          <p class="text_color_black">Fund Raised: 3 Lakhs</p>
+                          <p class="text_color_black">Needy Benefited: 40</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon" style="background-image: url('./images/next.svg') !important;transform: rotate(180deg);"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon" style="background-image: url('./images/next.svg') !important;"></span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- footer start   -->
+  <section class="bg-footer mt-lg-5 pb-5 pb-lg-4 padding" id="contact" style="background-image: url('./images/Group 44.png');background-size: cover;">
+    <div class="container-fluid">
+      <div class="row mx-lg-3 mt-5 mt-lg-0 mt-md-0">
+        <div class="col-lg-3 mt-lg-5 mt-4">
+          <div>
+            <a href="home.html"><img src="images/logo-Colour.png"
+              style="height: 60px;"></a>
+          </div>
+          <div>
+            <p class="font-weight-light text-white mt-3">We are a group of doctors and responsible
+              citizens who have come together to augment
+              and incorporate changes</p>
+          </div>
+        </div>
+        <div class="col-lg-3 mt-lg-5 mt-2">
+          <h5 class="text-white font-weight-bold">Deep Projects</h5>
+          <ul class="pl-0">
+            <li class="text-white list_style_type_none font-weight-light mt-3">
+              <p class="cool-link mb-0"><span class="fa fa-chevron-right mr-2"></span>Paccore Initiatives</p>
+            </li>
+            <li class="text-white list_style_type_none font-weight-light mt-3">
+              <a href="csractivities.html" class="text-white">
+                <p class="cool-link mb-0"><span class="fa fa-chevron-right mr-2"></span>CSR Members Forum</p>
+              </a>
+            </li>
+            <li class="text-white list_style_type_none font-weight-light mt-3">
+              <p class="cool-link mb-0"><span class="fa fa-chevron-right mr-2"></span>Dental Screening</p>
+            </li>
+            <li class="text-white list_style_type_none font-weight-light mt-3">
+              <p class="cool-link mb-0"><span class="fa fa-chevron-right mr-2"></span>School Camps</p>
+            </li>
+            <li class="text-white list_style_type_none font-weight-light mt-3">
+              <p class="cool-link mb-0"><span class="fa fa-chevron-right mr-2"></span>Police Camps</p>
+            </li>
+            <li class="text-white list_style_type_none font-weight-light mt-3">
+              <p class="cool-link mb-0"><span class="fa fa-chevron-right mr-2"></span>HAPAP</p>
+            </li>
+            <li class="text-white list_style_type_none font-weight-light mt-3">
+              <p class="cool-link mb-0"><span class="fa fa-chevron-right mr-2"></span>Asha</p>
+            </li>
+            <li class="text-white list_style_type_none font-weight-light mt-3">
+              <p class="cool-link mb-0"><span class="fa fa-chevron-right mr-2"></span>Marathons</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mt-lg-5 mt-2">
+          <h5 class="text-white font-weight-bold">Our Focus</h5>
+          <ul class="pl-0">
+            <li class="text-white list_style_type_none font-weight-light mt-3">
+              <p class="cool-link mb-0"><span class="fa fa-chevron-right mr-2"></span>Health</p>
+            </li>
+            <li class="text-white list_style_type_none font-weight-light mt-3">
+              <p class="cool-link mb-0"><span class="fa fa-chevron-right mr-2"></span>Education</p>
+            </li>
+            <li class="text-white list_style_type_none font-weight-light mt-3">
+              <p class="cool-link mb-0"><span class="fa fa-chevron-right mr-2"></span>Environment</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mt-lg-5 mt-2">
+          <h5 class="text-white font-weight-bold">Contact</h5>
+          <ul class="pl-0">
+            <li class="text-white list_style_type_none font-weight-light mt-3"><span
+                class="fa fa-map-marker mr-2"></span>45A, Journalist colony-A,<p class="ml-3 pt-3">Jubilee
+                Hills-500033,
+              </p>
+              <p class="ml-3">Hyderabad, India</p>
+            </li>
+            <li class="text-white list_style_type_none font-weight-light mt-3"><span
+                class="fa fa-mobile mr-2"></span>+91 88855 00443</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row" style="border-top:1px solid #fff;">
+        <div class="col-6 text-left">
+          <div class="pt-4">
+            <small class="text-white">Deep Foundation © 2020 / All Rights Reserved</small>
+          </div>
+        </div>
+        <div class="col-6 text-right">
+          <div class="pt-4">
+            <small class="text-white">Powered By: Infoswift Corp dba: PACCORE / Pacific Core Solutions</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer end -->
+  <!-- modal start -->
+  <div class="modal" id="myModal" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Enter Your Details</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div>
+            <form>
+              <div>
+                <label style="font-weight: 500;">Full Name</label>
+                <input type="text" class="form-control" id="fullname" required="">
+              </div>
+              <div class="mt-lg-2">
+                <label style="font-weight: 500;">Phone Number</label>
+                <input type="text" class="form-control" id="number" required="">
+              </div>
+              <div class="mt-lg-2">
+                <label style="font-weight: 500;">Your Email</label>
+                <input type="text" class="form-control" id="email" required="">
+              </div>
+              <div class="mt-lg-2">
+                <label style="font-weight: 500;">Campaigns you would like to contribute</label>
+                <select class="form-control" id="option">
+                  <option>Education</option>
+                  <option>Food</option>
+                  <option>Shelter and Water</option>
+                  <option>Health</option>
+                </select>
+              </div>
+              <div class="mt-lg-2">
+                <label style="font-weight: 500;">Amount</label>
+                <input type="number" class="form-control" id="amount" required="">
+              </div>
+              <div class="mt-lg-2">
+                <label style="font-weight: 500;">Message</label>
+                <textarea class="form-control" placeholder="message"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn button one pl-4 pr-4" id="submit">Submit</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"
+      aria-hidden="true"></i></button>
+  <!-- modal end -->
+  <!-- footer end -->
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.countup.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/mediaelement-and-player.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.9.0/baguetteBox.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 0) {
+        $(".navbar").removeClass("margin_remove");
+      }
+      else {
+        $(".navbar").addClass("margin_header");
+      }
+    });
+    $("#submit").click(function () {
+      var fullname = $("#fullname").val();
+      var number = $("#number").val();
+      var option = $("#option").val();
+      var email = $("#email").val();
+      var amount = $("#amount").val();
+
+      if (fullname == '' || number == '' || amount == '' || email == '') {
+        swal({
+          title: "Please enter the all details",
+          icon: "warning",
+          button: "OK",
+        });
+      }
+      else {
+        swal({
+          title: "Thank You",
+          text: "Our Team member will get back to you shortly",
+          icon: "success",
+          type: "success"
+        }).then(function () {
+          location.reload();
+        }
+        );
+      }
+    });
+    $(function () {
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800,
+        speedAsDuration: true
+      });
+    });
+    $('.counter').countUp();
+    $('.counter').countUp();
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: false,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        modifier: 1,
+        autoplay: 3000,
+        slideShadows: true,
+      },
+
+      loop: false,
+    });
+    $('.slider').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+
+    AOS.init({});
+    $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+    $('video').mediaelementplayer();
+    var textWrapper = document.querySelector('.ml12');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: true })
+      .add({
+        targets: '.ml12 .letter',
+        translateX: [40, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: (el, i) => 500 + 30 * i
+      }).add({
+        targets: '.ml12 .letter',
+        translateX: [0, -30],
+        opacity: [1, 0],
+        easing: "easeInExpo",
+        duration: 3000,
+        delay: (el, i) => 100 + 30 * i
+      });
+    baguetteBox.run('.tz-gallery');
+    $('.navbar-nav>li>a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
+
+  </script>
+</body>
+
+</html>
